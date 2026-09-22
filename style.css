@@ -4,12 +4,6 @@
   box-sizing: border-box;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 .l-grid {
   display: grid;
   grid-template-columns: 1fr;
