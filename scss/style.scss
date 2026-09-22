@@ -1,0 +1,28 @@
+@use 'foundation/reset';
+@use 'foundation/variable';
+@use 'layout/grid';
+@use 'object/component/card';
+@use 'object/component/case-card';
+@use 'object/component/tag';
+@use 'object/project/case-detail';
+@use 'layout/container';
+@use 'object/component/staff-card';
+@use 'object/project/staff-detail';
+@use 'layout/header';
+@use 'layout/footer';
+@use 'object/project/section';
+@use 'object/project/hero';
+@use 'object/component/button';
+@use 'object/component/news-list';
+@use 'object/project/case-category-nav';
+@use 'object/component/form-errors';
+@use 'object/project/contact-form';
+@use 'object/component/scroll-top';
+@use 'object/project/news-detail';
+@use 'object/project/404' as page-404;
+@use 'object/project/privacy-content';
+
+body {
+	background-color: variable.$color-bg-light;
+	color: variable.$color-text;
+}

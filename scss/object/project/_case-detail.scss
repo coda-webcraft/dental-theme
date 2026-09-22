@@ -1,0 +1,50 @@
+.p-case-detail__images {
+	display: flex;
+	gap: 16px;
+	margin-bottom: 24px;
+
+	figure {
+		flex: 1;
+		margin: 0;
+
+		img {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+			display: block;
+		}
+
+		figcaption {
+			text-align: center;
+			margin-top: 8px;
+			font-weight: bold;
+			color: #2E8B8B;
+		}
+	}
+}
+
+.p-case-detail__table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 24px;
+
+	th, td {
+		padding: 8px 16px;
+		border-bottom: 1px solid #eee;
+		text-align: left;
+	}
+
+	th {
+		width: 140px;
+		background-color: #f7fafa;
+	}
+}
+
+.p-case-detail__risk {
+	font-size: 13px;
+	color: #666;
+	background-color: #f7fafa;
+	padding: 16px;
+	border-radius: 8px;
+	margin-top: 24px;
+}

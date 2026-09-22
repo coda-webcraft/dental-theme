@@ -1,0 +1,23 @@
+@use '../foundation/mixin';
+
+.l-grid {
+	display: grid;
+	grid-template-columns: 1fr; // デフォルト(スマホ):1列
+	gap: 16px;
+
+	@include mixin.mq(sm) {
+		grid-template-columns: repeat(2, 1fr); // タブレット以上:2列
+	}
+
+	@include mixin.mq(md) {
+		grid-template-columns: repeat(3, 1fr); // PC:3列
+	}
+}
+
+.l-grid--treatment {
+	margin-top: 48px;
+}
+
+.l-grid--case {
+	margin-top: 48px;
+}

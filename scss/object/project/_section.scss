@@ -1,0 +1,50 @@
+@use '../../foundation/variable';
+
+.p-section {
+	padding-top: 64px;
+	padding-bottom: 64px;
+
+	&:nth-of-type(even) {
+		background-color: #fff;
+	}
+}
+
+.p-section__title {
+	text-align: center;
+	font-size: 28px;
+	margin-bottom: 32px;
+	position: relative;
+	padding-bottom: 16px;
+
+	&::after {
+		content: '';
+		display: block;
+		width: 48px;
+		height: 3px;
+		background-color: variable.$color-primary;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+.p-section__more {
+	text-align: center;
+	margin-top: 32px;
+
+	a {
+		display: inline-block;
+		padding: 10px 32px;
+		border: 1px solid variable.$color-primary;
+		border-radius: 999px;
+		color: variable.$color-primary;
+		text-decoration: none;
+		font-size: 14px;
+
+		&:hover {
+			background-color: variable.$color-primary;
+			color: #fff;
+		}
+	}
+}
