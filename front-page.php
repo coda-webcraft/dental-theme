@@ -2,17 +2,17 @@
 
 <!-- ヒーローセクション -->
 <?php
-$front_page_id = get_option( 'page_on_front' ); // フロントページに設定されている固定ページのID
-$hero_bg = get_field( 'hero_bg_image', $front_page_id );
+$front_page_id = get_option('page_on_front'); // フロントページに設定されている固定ページのID
+$hero_bg = get_field('hero_bg_image', $front_page_id);
 ?>
-<section class="p-hero" <?php if ( $hero_bg ) : ?>style="background-image: url('<?php echo esc_url( $hero_bg['url'] ); ?>');"<?php endif; ?>>
-	<div class="l-container">
-		<h1 class="p-hero__title">歯と心に、やさしい治療を。</h1>
-		<p class="p-hero__text">お子様からご年配の方まで、安心して通っていただける歯科医院を目指しています。</p>
-		<a href="<?php echo esc_url( home_url( '/contact/' ) ); ?>" class="c-button c-button--primary">
-			予約・お問い合わせ
-		</a>
-	</div>
+<section class="p-hero" <?php if ($hero_bg): ?>style="background-image: url('<?php echo esc_url($hero_bg['url']); ?>');" <?php endif; ?>>
+    <div class="l-container">
+        <h1 class="p-hero__title">歯と心に、やさしい治療を。</h1>
+        <p class="p-hero__text">お子様からご年配の方まで、安心して通っていただける歯科医院を目指しています。</p>
+        <a href="<?php echo esc_url(home_url('/reservation/')); ?>" class="c-button c-button--primary">
+            ご予約はこちら
+        </a>
+    </div>
 </section>
 
 <!-- 診療メニュー -->
@@ -188,37 +188,46 @@ $hero_bg = get_field( 'hero_bg_image', $front_page_id );
 
 <!-- アクセス -->
 <section class="p-section">
-	<div class="l-container">
-		<h2 class="p-section__title">アクセス</h2>
+    <div class="l-container">
+        <h2 class="p-section__title">アクセス</h2>
 
-		<?php
-		// 「アクセス」固定ページの情報を取得
-		$access_page = get_page_by_path( 'access' );
+        <?php
+        // 「アクセス」固定ページの情報を取得
+        $access_page = get_page_by_path('access');
 
-		if ( $access_page ) :
-			$tel     = get_field( 'clinic_tel', $access_page->ID );
-			$address = get_field( 'clinic_address', $access_page->ID );
-			$hours   = get_field( 'clinic_hours', $access_page->ID );
-			?>
-			<table class="p-case-detail__table">
-				<?php if ( $address ) : ?>
-					<tr><th>住所</th><td><?php echo esc_html( $address ); ?></td></tr>
-				<?php endif; ?>
-				<?php if ( $tel ) : ?>
-					<tr><th>電話番号</th><td><?php echo esc_html( $tel ); ?></td></tr>
-				<?php endif; ?>
-				<?php if ( $hours ) : ?>
-					<tr><th>診療時間</th><td><?php echo nl2br( esc_html( $hours ) ); ?></td></tr>
-				<?php endif; ?>
-			</table>
+        if ($access_page):
+            $tel = get_field('clinic_tel', $access_page->ID);
+            $address = get_field('clinic_address', $access_page->ID);
+            $hours = get_field('clinic_hours', $access_page->ID);
+            ?>
+            <table class="p-case-detail__table">
+                <?php if ($address): ?>
+                    <tr>
+                        <th>住所</th>
+                        <td><?php echo esc_html($address); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <?php if ($tel): ?>
+                    <tr>
+                        <th>電話番号</th>
+                        <td><?php echo esc_html($tel); ?></td>
+                    </tr>
+                <?php endif; ?>
+                <?php if ($hours): ?>
+                    <tr>
+                        <th>診療時間</th>
+                        <td><?php echo nl2br(esc_html($hours)); ?></td>
+                    </tr>
+                <?php endif; ?>
+            </table>
 
-			<div class="p-section__more">
-				<a href="<?php echo esc_url( get_permalink( $access_page->ID ) ); ?>">
-					アクセス詳細・地図を見る
-				</a>
-			</div>
-		<?php endif; ?>
-	</div>
+            <div class="p-section__more">
+                <a href="<?php echo esc_url(get_permalink($access_page->ID)); ?>">
+                    アクセス詳細・地図を見る
+                </a>
+            </div>
+        <?php endif; ?>
+    </div>
 </section>
 
 <?php get_footer(); ?>

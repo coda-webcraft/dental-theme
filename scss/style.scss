@@ -21,6 +21,7 @@
 @use 'object/project/news-detail';
 @use 'object/project/404' as page-404;
 @use 'object/project/privacy-content';
+@use 'object/project/reservation';
 
 body {
 	background-color: variable.$color-bg-light;
