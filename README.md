@@ -6,8 +6,6 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 ## 🔗 公開URL
 http://dental-theme.local/
 
-[https://coda-webcraft.github.io/dental-theme.local/](https://coda-webcraft.github.io/dental-theme.local/)
-
 | PC | スマホ |
 |---|---|
 | <img src="docs/screenshots/top-pc.png" width="400"> | <img src="docs/screenshots/top-sp.png" width="200"> |
