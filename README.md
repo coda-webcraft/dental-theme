@@ -12,6 +12,9 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 ※本リポジトリ（`dental-theme`）はWordPressテーマのソースコードです。上記URLの静的公開用ファイルは [dental-theme-portfolio](https://github.com/coda-webcraft/dental-theme-portfolio) リポジトリで管理しています。
 
+| PC | スマホ |
+|---|---|
+| <img src="docs/screenshots/top-pc.png" width="400"> | <img src="docs/screenshots/top-sp.png" width="200"> |
 
 ## 使用技術
 
