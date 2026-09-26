@@ -10,6 +10,7 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 ## 公開URLについて
 
+https://coda-webcraft.github.io/dental-theme-portfolio/
 本サイトはローカル開発環境（Local）で制作したものであり、一般公開しているURLはございません。画面のイメージは本リポジトリ内のスクリーンショットをご参照ください。
 
 | PC | スマホ |
