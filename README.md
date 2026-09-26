@@ -101,68 +101,6 @@ dental-theme/
     └── images/
 ```
 
-## ディレクトリ構成
-
-FLOCSS設計に基づく、代表的なファイル構成は以下のとおりです（一部抜粋）。
-
-```
-dental-theme/
-├── style.css                          # テーマ情報（コンパイル済みCSSを出力）
-├── functions.php                      # テーマ全体の読み込み
-├── header.php
-├── footer.php
-├── front-page.php                     # TOPページ
-├── page-contact.php                   # お問い合わせページ
-├── page-reservation.php               # ご予約ページ
-├── page-privacypolicy.php             # プライバシーポリシー
-├── archive-treatment.php              # 診療メニュー 一覧
-├── single-treatment.php               # 診療メニュー 詳細
-├── archive-case.php                   # 症例紹介 一覧・絞り込み
-├── single-case.php                    # 症例紹介 詳細
-├── taxonomy-treatment_category.php    # 診療カテゴリ別アーカイブ
-├── archive-staff.php                  # スタッフ紹介 一覧
-├── single-staff.php                   # スタッフ紹介 詳細
-├── archive.php                        # お知らせ 一覧
-├── single.php                         # お知らせ 詳細
-├── 404.php
-├── inc/
-│   ├── custom-post-types.php          # カスタム投稿タイプ・タクソノミー登録
-│   ├── theme-setup.php                # テーマサポート・メニュー登録
-│   └── enqueue.php                    # CSS／JSの読み込み設定
-├── template-parts/
-│   ├── content-treatment.php
-│   ├── content-case.php
-│   └── content-staff.php
-├── acf-json/                          # ACFフィールド定義（Local JSON）
-└── assets/
-    ├── scss/
-    │   ├── style.scss                 # 読み込み用エントリーファイル
-    │   ├── foundation/
-    │   │   ├── _variable.scss
-    │   │   ├── _mixin.scss
-    │   │   └── _reset.scss
-    │   ├── layout/
-    │   │   ├── _header.scss
-    │   │   ├── _footer.scss
-    │   │   └── _container.scss
-    │   └── object/
-    │       ├── component/
-    │       │   ├── _button.scss
-    │       │   └── _form.scss
-    │       ├── project/
-    │       │   ├── _hero.scss
-    │       │   ├── _treatment.scss
-    │       │   ├── _case.scss
-    │       │   ├── _staff.scss
-    │       │   ├── _contact-form.scss
-    │       │   └── _reservation.scss
-    │       └── utility/
-    │           └── _clearfix.scss
-    ├── js/
-    │   └── main.js                    # ハンバーガーメニュー／ページトップへ戻る 等
-    └── images/
-```
-
 ## 実装のポイント
 
 ### カスタム投稿タイプ・ACF設計
