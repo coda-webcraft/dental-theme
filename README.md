@@ -10,9 +10,8 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 ## 公開URL
 
-https://coda-webcraft.github.io/dental-theme-portfolio/
+※本リポジトリ（`dental-theme`）はWordPressテーマのソースコードです。上記URLの静的公開用ファイルは [dental-theme-portfolio](https://github.com/coda-webcraft/dental-theme-portfolio) リポジトリで管理しています。
 
-WordPress本体はローカル開発環境（Local）で制作しています。上記URLはSimply Staticで静的HTML化した上でGitHub Pagesに公開したものです。そのため、お問い合わせ・ご予約フォームの送信処理などPHPによる動的な機能は上記の公開版では動作しません（画面・機能の構成はご確認いただけます）。
 
 ## 使用技術
 
