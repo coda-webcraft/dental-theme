@@ -8,6 +8,12 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 機能実装だけでなく、ナビゲーション設計・アクセシビリティ・セキュリティ・法的配慮・バージョン管理まで一貫して対応し、公開可能な水準の完成度を目指しました。
 
+## 公開URL
+
+https://coda-webcraft.github.io/dental-theme-portfolio/
+
+WordPress本体はローカル開発環境（Local）で制作しています。上記URLはSimply Staticで静的HTML化した上でGitHub Pagesに公開したものです。そのため、お問い合わせ・ご予約フォームの送信処理などPHPによる動的な機能は上記の公開版では動作しません（画面・機能の構成はご確認いただけます）。
+
 ## 使用技術
 
 | 項目 | 使用技術 |
@@ -33,6 +39,68 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 | お知らせ | 標準投稿機能を活用した一覧・詳細ページ |
 | 404ページ | 存在しないURLへのアクセス時に表示する専用ページ |
 | プライバシーポリシー | 個人情報取り扱いに関する案内ページ |
+
+## ディレクトリ構成
+
+FLOCSS設計に基づく、代表的なファイル構成は以下のとおりです（一部抜粋）。
+
+```
+dental-theme/
+├── style.css                          # テーマ情報（コンパイル済みCSSを出力）
+├── functions.php                      # テーマ全体の読み込み
+├── header.php
+├── footer.php
+├── front-page.php                     # TOPページ
+├── page-contact.php                   # お問い合わせページ
+├── page-reservation.php               # ご予約ページ
+├── page-privacypolicy.php             # プライバシーポリシー
+├── archive-treatment.php              # 診療メニュー 一覧
+├── single-treatment.php               # 診療メニュー 詳細
+├── archive-case.php                   # 症例紹介 一覧・絞り込み
+├── single-case.php                    # 症例紹介 詳細
+├── taxonomy-treatment_category.php    # 診療カテゴリ別アーカイブ
+├── archive-staff.php                  # スタッフ紹介 一覧
+├── single-staff.php                   # スタッフ紹介 詳細
+├── archive.php                        # お知らせ 一覧
+├── single.php                         # お知らせ 詳細
+├── 404.php
+├── inc/
+│   ├── custom-post-types.php          # カスタム投稿タイプ・タクソノミー登録
+│   ├── theme-setup.php                # テーマサポート・メニュー登録
+│   └── enqueue.php                    # CSS／JSの読み込み設定
+├── template-parts/
+│   ├── content-treatment.php
+│   ├── content-case.php
+│   └── content-staff.php
+├── acf-json/                          # ACFフィールド定義（Local JSON）
+└── assets/
+    ├── scss/
+    │   ├── style.scss                 # 読み込み用エントリーファイル
+    │   ├── foundation/
+    │   │   ├── _variable.scss
+    │   │   ├── _mixin.scss
+    │   │   └── _reset.scss
+    │   ├── layout/
+    │   │   ├── _header.scss
+    │   │   ├── _footer.scss
+    │   │   └── _container.scss
+    │   └── object/
+    │       ├── component/
+    │       │   ├── _button.scss
+    │       │   └── _form.scss
+    │       ├── project/
+    │       │   ├── _hero.scss
+    │       │   ├── _treatment.scss
+    │       │   ├── _case.scss
+    │       │   ├── _staff.scss
+    │       │   ├── _contact-form.scss
+    │       │   └── _reservation.scss
+    │       └── utility/
+    │           └── _clearfix.scss
+    ├── js/
+    │   └── main.js                    # ハンバーガーメニュー／ページトップへ戻る 等
+    └── images/
+```
 
 ## 実装のポイント
 
