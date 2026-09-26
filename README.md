@@ -8,6 +8,10 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 機能実装だけでなく、ナビゲーション設計・アクセシビリティ・セキュリティ・法的配慮・バージョン管理まで一貫して対応し、公開可能な水準の完成度を目指しました。
 
+| PC | スマホ |
+|---|---|
+| <img src="docs/screenshots/top-pc.png" width="400"> | <img src="docs/screenshots/top-sp.png" width="200"> |
+
 ## 使用技術
 
 | 項目 | 使用技術 |
