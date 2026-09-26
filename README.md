@@ -4,8 +4,9 @@ WordPressオリジナルテーマ制作によるポートフォリオ作品で�
 
 
 ## 🔗 公開URL
+http://dental-theme.local/
 
-[https://coda-webcraft.github.io/dental-theme/](https://coda-webcraft.github.io/dental-theme/)
+[https://coda-webcraft.github.io/dental-theme.local/](https://coda-webcraft.github.io/dental-theme.local/)
 
 | PC | スマホ |
 |---|---|
